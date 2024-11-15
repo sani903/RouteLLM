@@ -1,0 +1,23 @@
+model_id: meta-llama/Meta-Llama-3-8B
+train_path: train_split.jsonl
+valid_path: validation_split.jsonl
+context_length: 2048  # Already correct
+num_devices: 8  # Assuming 8 GPUs
+num_epochs: 1  # Adjust this based on your dataset size to get ~2000 steps
+train_batch_size_per_device: 1  # Total batch size of 8 across 8 GPUs
+eval_batch_size_per_device: 1
+lr_scheduler_type: constant
+learning_rate: 1e-6  # Already correct
+num_checkpoints_to_keep: 1
+no_gradient_checkpoint: False
+output_dir: output
+deepspeed:
+  config_path: ds_config.json
+flash_attention_2: true
+classifier_config:
+  label_tokens:
+      - "[[1]]"
+      - "[[2]]"
+      - "[[3]]"
+      - "[[4]]"
+      - "[[5]]"
