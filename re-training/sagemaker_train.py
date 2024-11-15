@@ -21,7 +21,7 @@ import s3fs
 from transformers import BitsAndBytesConfig
 from deepspeed.utils.zero_to_fp32 import load_state_dict_from_zero_checkpoint
 from torch.nn.parallel import DistributedDataParallel as DDP
-login(token="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")
+login(token="")
 os.environ['HF_HOME'] = '/opt/ml/model/huggingface'
     
 def setup_distributed():
