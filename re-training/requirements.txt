@@ -1,0 +1,9 @@
+transformers
+datasets
+torch
+pydantic
+huggingface_hub
+deepspeed
+s3fs
+boto3
+bitsandbytes
