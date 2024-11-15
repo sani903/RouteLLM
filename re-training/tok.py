@@ -12,7 +12,7 @@ def tokenize_and_upload(config):
         legacy=True,
         truncation_side="left",
         padding_side="left",
-        token="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",
+        token="",
     )
     
     # Load dataset
