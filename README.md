@@ -1,5 +1,7 @@
 # RouteLLM
 
+## Trained BERT Router: https://drive.google.com/file/d/1KeDe1Uztc7e67NfCy0W9XaJPrYdx63LP/view?usp=sharing
+
 RouteLLM is a framework for serving and evaluating LLM routers.
 
 [ [Blog](http://lmsys.org/blog/2024-07-01-routellm/) ] [ [Paper](https://arxiv.org/abs/2406.18665) ]
